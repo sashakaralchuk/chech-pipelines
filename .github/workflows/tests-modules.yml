@@ -1,8 +1,7 @@
 name: Tests modules
 on:
   pull_request:
-    branches:
-    - main
+    branches: [main]
 jobs:
   tests-modules:
     name: Tests modules

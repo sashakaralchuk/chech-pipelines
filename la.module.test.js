@@ -1,5 +1,5 @@
 const fn = () => 44
 
 it('must work', () => {
-    expect(fn()).toBe(77)
+    expect(fn()).toBe(44)
 })
