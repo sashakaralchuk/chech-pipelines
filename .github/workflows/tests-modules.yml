@@ -1,6 +1,5 @@
 name: Tests modules
 on:
-  push:
   pull_request:
     branches:
     - main
@@ -9,8 +8,6 @@ jobs:
     name: Tests modules
     runs-on: ubuntu-22.04
     steps:
-    - name: V
-      run: node -v
     - uses: actions/checkout@v3
     - name: Install dependencies
       run: npm i
