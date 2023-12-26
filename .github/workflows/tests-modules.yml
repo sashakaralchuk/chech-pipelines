@@ -1,0 +1,17 @@
+# XXX: use image with prod version node and os
+name: Tests modules
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+jobs:
+  tests-modules:
+    name: Tests modules
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install dependencies
+      run: npm i
+    - name: Run module tests
+      run: node node_modules/jest/bin/jest
