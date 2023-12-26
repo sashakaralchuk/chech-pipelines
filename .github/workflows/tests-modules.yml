@@ -1,5 +1,8 @@
+# XXX: use image with prod version node and os
 name: Tests modules
 on:
+  push:
+    branches: [main]
   pull_request:
     branches: [main]
 jobs:
